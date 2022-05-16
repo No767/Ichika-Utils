@@ -1,6 +1,7 @@
 import asyncio
 import pandas as pd
 import numpy as np
+import uvloop
 
 class IchikaUtils:
     def __init__(self):
@@ -10,7 +11,7 @@ class IchikaUtils:
         for _ in range(10):
             await asyncio.sleep(3)
             print("hello world")
-            
+    asyncio.set_event_loop_policy(uvloop.EventPolicy())            
     async def calcSummary(self):
         df_describe = pd.DataFrame({
         "Name": [
