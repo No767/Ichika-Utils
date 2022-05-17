@@ -2,14 +2,15 @@ from ichika_utils import IchikaUtils
 import asyncio
 import uvloop
 from pyinstrument import Profiler
+import numpy as np
 profiler = Profiler()
 
 profiler.start()
 async def main():
     
-    data = [1, 3, 4, 5, 7, 9, 2]
+    data = np.random.randn(5000000)
     utils = IchikaUtils()
-    print(await utils.calcStats(data))
+    print(await utils.graphHistoRandn(5000000))
 
     
     
