@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ichika_utils"
-version = "0.1.1"
-description = "Stats Utils for Ichika"
+version = "0.1.2"
+description = "Asynchronous Statistics Utils for Ichika"
 authors = ["No767 <73260931+No767@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
@@ -33,6 +33,7 @@ pandas = "^1.4.2"
 numba = "^0.55.1"
 uvloop = "^0.16.0"
 matplotlib = "^3.5.2"
+scikit-learn = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.19.0"
