@@ -23,7 +23,7 @@ include = ["license.txt"]
 packages = [{ include = "ichika_utils", from = "src" }]
 
 [tool.poetry.dependencies]
-python = ">=3.8, <3.11"
+python = "^3.8"
 scipy = "^1.8.0"
 pandas = "^1.4.2"
 numba = "^0.55.1"
