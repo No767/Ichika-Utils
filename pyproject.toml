@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ichika_utils"
-version = "0.1.4.dev.1"
+version = "0.1.4.dev.2"
 description = "Asynchronous Statistics Utils for Ichika"
 authors = ["No767 <73260931+No767@users.noreply.github.com>"]
 license = "MIT"
@@ -26,7 +26,6 @@ packages = [{ include = "ichika_utils", from = "src" }]
 python = "^3.8"
 scipy = "^1.8.0"
 pandas = "^1.4.2"
-numba = "^0.55.1"
 uvloop = "^0.16.0"
 matplotlib = "^3.5.2"
 scikit-learn = "^1.1.1"
