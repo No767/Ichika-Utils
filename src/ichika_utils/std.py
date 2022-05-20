@@ -7,6 +7,14 @@ class StandardDeviationCalc:
         self.self = self
     
     async def stdCalc(self, data: list):
+        """Calculates the standard deviation of the data
+
+        Args:
+            data (list): list of data
+
+        Returns:
+            _type_: float
+        """
         npArr = np.array(data)
         return np.std(npArr)
 
