@@ -6,6 +6,8 @@
 
 Asynchronous Statistics Utils for Ichika
 
+<div align=left>
+
 # Info
 
 This is a set of utils for Ichika, and this is not even production ready. This is highly experimental.
