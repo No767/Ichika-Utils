@@ -1,7 +1,8 @@
-name: Deploy PyPi Package (Latest)
+name: Release (PyPI)
 
 on:
-  push:
+  release:
+    types: [published]
 
 permissions:
   contents: read
@@ -29,9 +30,7 @@ jobs:
       if: steps.cache-poetry.outputs.cache-hit != 'true'
       run: |
         poetry install
-    - name: Build Package with Poetry
-      run: poetry build
-    - name: Build and publish to pypi
+    - name: Build + Upload Package to PyPI
       uses: JRubics/poetry-publish@v1.11
       with:
         pypi_token: ${{ secrets.PYPI_TOKEN }}
