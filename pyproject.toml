@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ichika_utils"
-version = "0.1.4"
+version = "0.1.5"
 description = "Asynchronous Statistics Utils for Ichika"
 authors = ["No767 <73260931+No767@users.noreply.github.com>"]
 license = "MIT"
