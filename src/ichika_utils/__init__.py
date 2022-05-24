@@ -1,5 +1,5 @@
 from .main import IchikaUtils
-from .std import StandardDeviationCalc
 from .lin_regression import LinRegression
+from .basic import BasicCalc
 
-__all__ = ["IchikaUtils", "StandardDeviationCalc", "LinRegression"]
+__all__ = ["IchikaUtils", "LinRegression", "BasicCalc"]
